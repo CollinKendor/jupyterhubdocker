@@ -21,8 +21,8 @@ c.DockerSpawner.notebook_dir = notebook_dir
 c.Spawner.pre_spawn_hook = create_dir_hook
 
 c.JupyterHub.authenticator_class = 'ldapauthenticator.LDAPAuthenticator'
-c.LDAPAuthenticator.server_address = '13.250.1.38'
-c.LDAPAuthenticator.server_port = 10389
+c.LDAPAuthenticator.server_address = ''
+c.LDAPAuthenticator.server_port = 389
 c.LDAPAuthenticator.bind_dn_template = [
     'uid={username},ou=user,dc=kewmann,dc=com'
 ]
@@ -32,4 +32,4 @@ c.LDAPAuthenticator.user_search_base = 'ou=user,dc=kewmann,dc=com'
 c.LDAPAuthenticator.user_attribute = 'uid'
 c.LDAPAuthenticator.lookup_dn_user_dn_attribute = 'uid'
 c.LDAPAuthenticator.valid_username_regex = '.+'
-c.Authenticator.admin_users = {'deric.dominic@kewmann.com'}
+c.Authenticator.admin_users = {''}
