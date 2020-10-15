@@ -5,4 +5,4 @@ https://opendreamkit.org/2018/10/17/jupyterhub-docker/#:~:text=%E2%80%9CThe%20li
 # What's Different.
 1.  There is no https as I could not det domain in my server.
 2.  LDAPAuthenticator is installed from git.
-3.  Special characters in username is replaced with _ for data persistance.
+3.  Special characters in username is replaced with _ using bootstrap method for data persistance.
