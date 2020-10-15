@@ -4,9 +4,12 @@ https://opendreamkit.org/2018/10/17/jupyterhub-docker/#:~:text=%E2%80%9CThe%20li
 
 # What's Different.
 1.  There is no https as I could not det domain in my server.
-2.  LDAPAuthenticator is installed from git.
+2.  Using LDAP authentication instead of OAuth. LDAPAuthenticator is installed from git.
 3.  Special characters in username is replaced with _ using bootstrap method for data persistance.
 
 # Information Needed Before Starting Engines.
 1.  HOST in .env file. Please enter the IP or Hostname of reverse proxy.
-2.  
+2.  jupyterhub/jupyterhub_config.py:
+    -  c.LDAPAuthenticator.server_address - Put LDAP server hostname or IP
+    -  c.LDAPAuthenticator.server_port    - LDAP port. Set to 389 at the moment.
+    -  c.Authenticator.admin_users        - Set an admin user from LDAP
