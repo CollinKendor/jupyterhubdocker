@@ -6,3 +6,7 @@ https://opendreamkit.org/2018/10/17/jupyterhub-docker/#:~:text=%E2%80%9CThe%20li
 1.  There is no https as I could not det domain in my server.
 2.  LDAPAuthenticator is installed from git.
 3.  Special characters in username is replaced with _ using bootstrap method for data persistance.
+
+# Information Needed Before Starting Engines.
+1.  HOST in .env file. Please enter the IP or Hostname of reverse proxy.
+2.  
