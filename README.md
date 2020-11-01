@@ -7,7 +7,7 @@ https://opendreamkit.org/2018/10/17/jupyterhub-docker/#:~:text=%E2%80%9CThe%20li
 2.  Install Docker Engine and Docker Compose in server before starting.
 
 # What's Different.
-1.  There is no https as I could not det domain in my server.
+1.  There is no https as I could not set domain in my server.
 2.  Using LDAP authentication instead of OAuth. LDAPAuthenticator is installed from git.
 3.  Special characters in username is replaced with _ using bootstrap method for data persistance.
 
